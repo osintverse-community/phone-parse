@@ -24,7 +24,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/phone-parse@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/phone-parse@sha256:86dcb2e710ccedcf7133d469ba172efe500d2f58cec36751407b28d3af3bf426
   platforms: [linux/amd64, linux/arm64]
   command: ["phone-parse", "--region", "{region}", "{phone}"]
   output_format: json
